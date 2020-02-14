@@ -21,10 +21,10 @@ void CreateBoard(char board[3][3]){ //
             A[i][j] = board[i][j];
             //creating the visual boundries of the board
             //using salt for bounds because it's late 
-            cout<< "🧂" << A[i][j]; //visual bound for the columns
+            cout<< " 🧂  " << A[i][j]; //visual bound for the columns
             
         }
-         cout<< "🧂"; //visual bound for the rows
+         cout<< " 🧂 " << endl; //visual bound for the rows
     }
 
 }
@@ -79,9 +79,9 @@ void DisplayBoard(char board[][3]){
         {
              //creating the visual boundries of the board
             //using salt for bounds because it's late 
-            cout<< "🧂" << board[i][j]; //visual bound for the columns
+            cout<< " 🧂  " << board[i][j]; //visual bound for the columns
         }
-         cout << "🧂"; //visual bound for the rows
+         cout << " 🧂 " << endl; //visual bound for the rows
     }
 
 }
@@ -114,40 +114,36 @@ int main(){
 
     //creating loop for the 9 iterations of the turns
     // use i as the index 0 to 9 to get exactly 9 iterations
-    if(int i = 0; i < 9; i++){
+    for(int i = 0; i < 9; i++){
 
-        if(i % 2 == 1) //if the number is odd, then play X
+        if(i % 2 == 0) //if the number is odd, then play X
         {
             X = GetPlayerChoice(); //gets mapped to player choice function
-            PlaceMarker(X, 'x'); //actual mapping
+            PlaceMarker(X, 'X'); //actual mapping
         }
         else{ //when function is even or when x%2 == 0
             O = GetPlayerChoice(); //just repeating previous functions
-            PlaceMarker(O, 'o'); //mapping
+            PlaceMarker(O, 'O'); //mapping
         }
         //calling board array function to display
         DisplayBoard(A);
     }
 
-
-
-
-    if ((arr[0][0] == arr[0][1] && arr[0][1] == arr[0][2]) ||
-        (arr[0][0] == arr[1][0] && arr[1][0] == arr[2][0]) ||
-        (arr[0][0] == arr[1][1] && arr[1][1] == arr[2][2])) {
-            cout << "The winner is " << arr[0][0] << "!" << endl;
+    if ((A[0][0] == A[0][1] && A[0][1] == A[0][2]) ||
+        (A[0][0] == A[1][0] && A[1][0] == A[2][0]) ||
+        (A[0][0] == A[1][1] && A[1][1] == A[2][2])) {
+            cout << "The winner is " << A[0][0] << "!" << endl;
     }
-    else if ((arr[1][0] == arr[1][1] && arr[1][1] == arr[1][2]) ||
-        (arr[0][1] == arr[1][1] && arr[1][1] == arr[1][2]) ||
-        (arr[0][2] == arr[1][1] && arr[1][1] == arr[2][0])) {
-            cout << "The winner is " << arr[1][1] << "!" << endl;
+    else if ((A[1][0] == A[1][1] && A[1][1] == A[1][2]) ||
+        (A[0][1] == A[1][1] && A[1][1] == A[1][2]) ||
+        (A[0][2] == A[1][1] && A[1][1] == A[2][0])) {
+            cout << "The winner is " << A[1][1] << "!" << endl;
     }
-    else if ((arr[2][0] == arr[2][1] && arr[2][1] == arr[2][2]) ||
-        (arr[0][2] == arr[1][2] && arr[1][2] == arr[2][2])) {
-            cout << "The winner is " << arr[2][2] << "!" << endl;
+    else if ((A[2][0] == A[2][1] && A[2][1] == A[2][2]) ||
+        (A[0][2] == A[1][2] && A[1][2] == A[2][2])) {
+            cout << "The winner is " << A[2][2] << "!" << endl;
     }
     else{
         cout << "Cat's Game!";
     }
-
 }
