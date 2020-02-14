@@ -33,6 +33,44 @@ void DisplayBoard(char board[3][3]){
     }
 }
 
+void PlaceMarker(char move, char marker){
+
+    int c = 0;
+    int r = 0;
+
+    switch (move){
+        case 'a':
+            r = 0; c = 0;
+            break;
+        case 'b':
+            r = 0; c = 1;
+            break;
+        case 'c':
+            r = 0; c = 2;
+            break;
+        case 'd':
+            r = 1; c = 0;
+            break;
+        case 'e':
+            r = 1; c = 1;
+            break;
+        case 'f':
+            r = 1; c = 2;
+            break;
+        case 'g':
+            r = 2; c = 0;
+            break;
+        case 'h':
+            r = 2; c = 1;
+            break;
+        case 'i':
+            r = 2; c = 2;
+            break;
+    }
+
+    A[r][c] = marker;
+}
+
 //displaying the board
 
 //function to get the players next move
