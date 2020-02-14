@@ -29,6 +29,7 @@ void CreateBoard(char board[3][3]){ //
 
 }
 
+//place marker function
 void PlaceMarker(char move, char marker){
 
     int c = 0;
@@ -103,7 +104,33 @@ int main(){
     // here's where we will call the CreateBoard function
     //have both options of characters
     //function going through the options
-    DisplayBoard(A);
+
+    //  initalizing two options for the game
+    char X; // X option
+    char O; // O not zero, option
+
+    // calling board function with input array to connect parts
+    CreateBoard(A);
+
+    //creating loop for the 9 iterations of the turns
+    // use i as the index 0 to 9 to get exactly 9 iterations
+    if(int i = 0; i < 9; i++){
+
+        if(i % 2 == 1) //if the number is odd, then play X
+        {
+            X = GetPlayerChoice(); //gets mapped to player choice function
+            PlaceMarker(X, 'x'); //actual mapping
+        }
+        else{ //when function is even or when x%2 == 0
+            O = GetPlayerChoice(); //just repeating previous functions
+            PlaceMarker(O, 'o'); //mapping
+        }
+        //calling board array function to display
+        DisplayBoard(A);
+    }
+
+
+
 
     if ((arr[0][0] == arr[0][1] && arr[0][1] == arr[0][2]) ||
         (arr[0][0] == arr[1][0] && arr[1][0] == arr[2][0]) ||
