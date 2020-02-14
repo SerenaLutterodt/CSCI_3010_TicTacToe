@@ -8,7 +8,7 @@ using namespace std;
 // empty 3x3 matrix take in an array
 //initialize the array with characters
 //this is the boards shell
-char A[3][3] = {{'a', 'b', 'c'}, {'d', 'e', 'f',}, {'g', 'h', 'i'}}
+char A[3][3] = {{'a', 'b', 'c'}, {'d', 'e', 'f',}, {'g', 'h', 'i'}};
 
 
 void CreateBoard(char board[3][3]){ // 
@@ -36,7 +36,6 @@ int main(){
     // here's where we will call the CreateBoard function
     //have both options of characters
     //function going through the options
-
 }
 
 /*
