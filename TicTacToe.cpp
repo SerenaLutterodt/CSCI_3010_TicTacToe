@@ -11,20 +11,38 @@ using namespace std;
 char A[3][3] = {{'a', 'b', 'c'}, {'d', 'e', 'f',}, {'g', 'h', 'i'}}
 
 
-void CreateBoard(char board[3][3]){ // 
+void CreateBoard(char board[3][]){ // 
     //creating for loop to generate board
     for(int i=0 ; i<3 ; i++) // row
     {
         for(int j=0 ; j<3 ; j++) //column
         {
             A[i][j] = board[i][j];
+            //creating the visual boundries of the board
+            //using salt for bounds because it's late 
+            cout<< "🧂" << A[i][j]; //visual bound for the columns
             
         }
+         cout<< "🧂" << A[i][j]; //visual bound for the rows
     }
 
 }
-//displaying the board
 
+//displaying the board--> repeating basically what is above
+void DisplayBoard(char board[][3]){
+    //creating for loop to generate board
+    for(int i=0 ; i<3 ; i++) // row
+    {
+        for(int j=0 ; j<3 ; j++) //column
+        {
+             //creating the visual boundries of the board
+            //using salt for bounds because it's late 
+            cout<< "🧂" << A[i][j]; //visual bound for the columns
+        }
+         cout<< "🧂" << A[i][j]; //visual bound for the rows
+    }
+
+}
 //function to get the players next move
 
 //set the players move to their location
