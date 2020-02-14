@@ -1,0 +1,40 @@
+ 🧂  a 🧂  b 🧂  c 🧂 
+ 🧂  d 🧂  e 🧂  f 🧂 
+ 🧂  g 🧂  h 🧂  i 🧂 
+Your Turn! Where would you like to move? g
+ 🧂  a 🧂  b 🧂  c 🧂 
+ 🧂  d 🧂  e 🧂  f 🧂 
+ 🧂  X 🧂  h 🧂  i 🧂 
+Your Turn! Where would you like to move? e
+ 🧂  a 🧂  b 🧂  c 🧂 
+ 🧂  d 🧂  O 🧂  f 🧂 
+ 🧂  X 🧂  h 🧂  i 🧂 
+Your Turn! Where would you like to move? c
+ 🧂  a 🧂  b 🧂  X 🧂 
+ 🧂  d 🧂  O 🧂  f 🧂 
+ 🧂  X 🧂  h 🧂  i 🧂 
+Your Turn! Where would you like to move? a
+ 🧂  O 🧂  b 🧂  X 🧂 
+ 🧂  d 🧂  O 🧂  f 🧂 
+ 🧂  X 🧂  h 🧂  i 🧂 
+Your Turn! Where would you like to move? i
+ 🧂  O 🧂  b 🧂  X 🧂 
+ 🧂  d 🧂  O 🧂  f 🧂 
+ 🧂  X 🧂  h 🧂  X 🧂 
+Your Turn! Where would you like to move? h
+ 🧂  O 🧂  b 🧂  X 🧂 
+ 🧂  d 🧂  O 🧂  f 🧂 
+ 🧂  X 🧂  O 🧂  X 🧂 
+Your Turn! Where would you like to move? b
+ 🧂  O 🧂  X 🧂  X 🧂 
+ 🧂  d 🧂  O 🧂  f 🧂 
+ 🧂  X 🧂  O 🧂  X 🧂 
+Your Turn! Where would you like to move? d
+ 🧂  O 🧂  X 🧂  X 🧂 
+ 🧂  O 🧂  O 🧂  f 🧂 
+ 🧂  X 🧂  O 🧂  X 🧂 
+Your Turn! Where would you like to move? f
+ 🧂  O 🧂  X 🧂  X 🧂 
+ 🧂  O 🧂  O 🧂  X 🧂 
+ 🧂  X 🧂  O 🧂  X 🧂 
+The winner is X!
