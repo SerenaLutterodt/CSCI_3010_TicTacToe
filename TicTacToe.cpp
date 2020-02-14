@@ -23,6 +23,16 @@ void CreateBoard(char board[3][3]){ //
     }
 
 }
+
+void DisplayBoard(char board[3][3]){
+    for (int i = 0; i < 3; i++){
+        for (int j = 0; j < 3; j++){
+            cout << " | " << board[i][j];
+        }
+        cout << " | " << endl;
+    }
+}
+
 //displaying the board
 
 //function to get the players next move
@@ -36,6 +46,8 @@ int main(){
     // here's where we will call the CreateBoard function
     //have both options of characters
     //function going through the options
+    DisplayBoard(A);
+
 }
 
 /*
