@@ -12,7 +12,7 @@ using namespace std;
 char A[3][3] = {{'a', 'b', 'c'}, {'d', 'e', 'f',}, {'g', 'h', 'i'}};
 
 
-void CreateBoard(char board[3][]){ // 
+void CreateBoard(char board[3][3]){ // 
     //creating for loop to generate board
     for(int i=0 ; i<3 ; i++) // row
     {
@@ -24,18 +24,9 @@ void CreateBoard(char board[3][]){ //
             cout<< "🧂" << A[i][j]; //visual bound for the columns
             
         }
-         cout<< "🧂" << A[i][j]; //visual bound for the rows
+         cout<< "🧂"; //visual bound for the rows
     }
 
-}
-
-void DisplayBoard(char board[3][3]){
-    for (int i = 0; i < 3; i++){
-        for (int j = 0; j < 3; j++){
-            cout << " 🧂 " << board[i][j];
-        }
-        cout << " 🧂 " << endl;
-    }
 }
 
 //place marker function
@@ -88,9 +79,9 @@ void DisplayBoard(char board[][3]){
         {
              //creating the visual boundries of the board
             //using salt for bounds because it's late 
-            cout<< "🧂" << A[i][j]; //visual bound for the columns
+            cout<< "🧂" << board[i][j]; //visual bound for the columns
         }
-         cout<< "🧂" << A[i][j]; //visual bound for the rows
+         cout << "🧂"; //visual bound for the rows
     }
 
 }
@@ -140,5 +131,23 @@ int main(){
 
 
 
+
+    if ((arr[0][0] == arr[0][1] && arr[0][1] == arr[0][2]) ||
+        (arr[0][0] == arr[1][0] && arr[1][0] == arr[2][0]) ||
+        (arr[0][0] == arr[1][1] && arr[1][1] == arr[2][2])) {
+            cout << "The winner is " << arr[0][0] << "!" << endl;
+    }
+    else if ((arr[1][0] == arr[1][1] && arr[1][1] == arr[1][2]) ||
+        (arr[0][1] == arr[1][1] && arr[1][1] == arr[1][2]) ||
+        (arr[0][2] == arr[1][1] && arr[1][1] == arr[2][0])) {
+            cout << "The winner is " << arr[1][1] << "!" << endl;
+    }
+    else if ((arr[2][0] == arr[2][1] && arr[2][1] == arr[2][2]) ||
+        (arr[0][2] == arr[1][2] && arr[1][2] == arr[2][2])) {
+            cout << "The winner is " << arr[2][2] << "!" << endl;
+    }
+    else{
+        cout << "Cat's Game!";
+    }
 
 }
