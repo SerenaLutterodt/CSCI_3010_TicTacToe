@@ -105,4 +105,22 @@ int main(){
     //function going through the options
     DisplayBoard(A);
 
+    if ((arr[0][0] == arr[0][1] && arr[0][1] == arr[0][2]) ||
+        (arr[0][0] == arr[1][0] && arr[1][0] == arr[2][0]) ||
+        (arr[0][0] == arr[1][1] && arr[1][1] == arr[2][2])) {
+            cout << "The winner is " << arr[0][0] << "!" << endl;
+    }
+    else if ((arr[1][0] == arr[1][1] && arr[1][1] == arr[1][2]) ||
+        (arr[0][1] == arr[1][1] && arr[1][1] == arr[1][2]) ||
+        (arr[0][2] == arr[1][1] && arr[1][1] == arr[2][0])) {
+            cout << "The winner is " << arr[1][1] << "!" << endl;
+    }
+    else if ((arr[2][0] == arr[2][1] && arr[2][1] == arr[2][2]) ||
+        (arr[0][2] == arr[1][2] && arr[1][2] == arr[2][2])) {
+            cout << "The winner is " << arr[2][2] << "!" << endl;
+    }
+    else{
+        cout << "Cat's Game!";
+    }
+
 }
